@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>מחשבון טיפים</h1>
+    <div style="display: grid; justify-content: center;">
+        <input id="workersNumber" type="text" placeholder="הכנס כמות עובדים">
+        <input id="totalHours" type="text" placeholder="הכנס כמות שעות כוללת">
+        <input id="creditTip" type="text" placeholder="הכנס כמות טיפ אשראי">
+        <input id="cashTip" type="text" placeholder="הכנס כמות טיפ מזומן">
+    </div>
+    <div style="display: grid; justify-content: center;">
+        <input id="work1" type="text" placeholder="מספר שעות עובד 1">
+        <input id="work2" type="text" placeholder="מספר שעות עובד 2">
+        <input id="work3" type="text" placeholder="מספר שעות עובד 3">
+        <input id="work4" type="text" placeholder="מספר שעות עובד 4">
+        <input id="work5" type="text" placeholder="מספר שעות עובד 5">
+        <input id="work6" type="text" placeholder="מספר שעות עובד 6">
+        <input id="work7" type="text" placeholder="מספר שעות עובד 7">
+        <input id="work8" type="text" placeholder="מספר שעות עובד 8">
+    </div>
+    <button onclick="cliked()">חשב</button>
+    <div>
+        <p>הפרשה היא <span id="hafrashaView">0</span></p>
+        <p>סך הטיפ לחלוקה <span id="bigTipView">0</span></p>
+        <p>טיפ לשעה הוא <span id="smallTipView">0</span></p>
+    </div>
+    <div>
+        <p>עובד 1 מקבל <span id="work11"></span>0</p>
+        <p>עובד 2 מקבל <span id="work22"></span>0</p>
+        <p>עובד 3 מקבל <span id="work33"></span>0</p>
+        <p>עובד 4 מקבל <span id="work44"></span>0</p>
+        <p>עובד 5 מקבל <span id="work55"></span>0</p>
+        <p>עובד 6 מקבל <span id="work66"></span>0</p>
+        <p>עובד 7 מקבל <span id="work77"></span>0</p>
+        <p>עובד 8 מקבל <span id="work88"></span>0</p>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+</html>
