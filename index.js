@@ -1,10 +1,10 @@
 
 
 function cliked(){
-    let workersNumber = parseInt(document.querySelector("#workersNumber").value);
-    let totalHours = parseInt(document.querySelector("#totalHours").value);
-    let creditTip = parseInt(document.querySelector("#creditTip").value);
-    let cashTip = parseInt(document.querySelector("#cashTip").value);
+    let workersNumber = parseFloat(document.querySelector("#workersNumber").value);
+    let totalHours = parseFloat(document.querySelector("#totalHours").value);
+    let creditTip = parseFloat(document.querySelector("#creditTip").value);
+    let cashTip = parseFloat(document.querySelector("#cashTip").value);
     let minSalery = 29.12;
 
     let hafrasha = totalHours * minSalery;
@@ -20,13 +20,13 @@ function cliked(){
     let smallTipView = bigTipView / totalHours; // כמות הטיפ שנשאר לחלוקה לחלק למספר השעות שעבדו העובדים
     document.querySelector("#smallTipView").innerHTML = smallTipView
 
-    document.querySelector("#work11").innerHTML = smallTipView * parseInt(document.querySelector("#work1").value)
-    document.querySelector("#work22").innerHTML = smallTipView * parseInt(document.querySelector("#work2").value)
-    document.querySelector("#work33").innerHTML = smallTipView * parseInt(document.querySelector("#work3").value)
-    document.querySelector("#work44").innerHTML = smallTipView * parseInt(document.querySelector("#work4").value)
-    document.querySelector("#work55").innerHTML = smallTipView * parseInt(document.querySelector("#work5").value)
-    document.querySelector("#work66").innerHTML = smallTipView * parseInt(document.querySelector("#work6").value)
-    document.querySelector("#work77").innerHTML = smallTipView * parseInt(document.querySelector("#work7").value)
-    document.querySelector("#work88").innerHTML = smallTipView * parseInt(document.querySelector("#work8").value)
+    document.querySelector("#work11").innerHTML = smallTipView * parseFloat(document.querySelector("#work1").value)
+    document.querySelector("#work22").innerHTML = smallTipView * parseFloat(document.querySelector("#work2").value)
+    document.querySelector("#work33").innerHTML = smallTipView * parseFloat(document.querySelector("#work3").value)
+    document.querySelector("#work44").innerHTML = smallTipView * parseFloat(document.querySelector("#work4").value)
+    document.querySelector("#work55").innerHTML = smallTipView * parseFloat(document.querySelector("#work5").value)
+    document.querySelector("#work66").innerHTML = smallTipView * parseFloat(document.querySelector("#work6").value)
+    document.querySelector("#work77").innerHTML = smallTipView * parseFloat(document.querySelector("#work7").value)
+    document.querySelector("#work88").innerHTML = smallTipView * parseFloat(document.querySelector("#work8").value)
 
 }
