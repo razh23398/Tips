@@ -19,7 +19,7 @@ function cliked(){
     document.querySelector("#bigTipView").innerHTML = bigTipView 
     let smallTipView = bigTipView / totalHours; // כמות הטיפ שנשאר לחלוקה לחלק למספר השעות שעבדו העובדים
     console.log(smallTipView)
-    if (smallTipView >= 10){
+    /*if (smallTipView >= 10){
         totalHours = totalHours + 4
         smallTipView = bigTipView / totalHours
         document.querySelector("#smallTipView").innerHTML = smallTipView
@@ -32,8 +32,9 @@ function cliked(){
     document.querySelector("#work77").innerHTML = smallTipView * parseFloat(document.querySelector("#work7").value)
     document.querySelector("#work88").innerHTML = smallTipView * parseFloat(document.querySelector("#work8").value)
     document.querySelector("#work99").innerHTML = smallTipView * 4
-    } else {
-        document.querySelector("#smallTipView").innerHTML = smallTipView
+    } else { */
+
+    document.querySelector("#smallTipView").innerHTML = smallTipView
     document.querySelector("#work11").innerHTML = smallTipView * parseFloat(document.querySelector("#work1").value)
     document.querySelector("#work22").innerHTML = smallTipView * parseFloat(document.querySelector("#work2").value)
     document.querySelector("#work33").innerHTML = smallTipView * parseFloat(document.querySelector("#work3").value)
@@ -43,5 +44,5 @@ function cliked(){
     document.querySelector("#work77").innerHTML = smallTipView * parseFloat(document.querySelector("#work7").value)
     document.querySelector("#work88").innerHTML = smallTipView * parseFloat(document.querySelector("#work8").value)
     document.querySelector("#work99").innerHTML = 0
-    }
+    //}
 }
